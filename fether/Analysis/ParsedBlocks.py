@@ -1,7 +1,7 @@
 """Interace to parse aggregate data from snapshots of the Ethereum network."""
 
-import tags
-from ContractMap import ContractMap
+from fether.Analysis import tags
+from fether.Analysis.ContractMap import ContractMap
 import os
 import csv
 import requests

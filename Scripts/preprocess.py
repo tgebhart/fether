@@ -2,12 +2,9 @@
 
 import subprocess
 import sys
-sys.path.append("./../Preprocessing")
-sys.path.append("./../Analysis")
 import os
-os.environ['ETH_BLOCKCHAIN_ANALYSIS_DIR'] = './../Preprocessing/'
-from Crawler import Crawler
-from ContractMap import ContractMap
+from fether.Preprocessing import Crawler
+from fether.Analysis import ContractMap
 import subprocess
 import time
 LOGDIR = "./../Preprocessing/logs"

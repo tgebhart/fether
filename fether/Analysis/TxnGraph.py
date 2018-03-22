@@ -1,15 +1,15 @@
 """Create a snapshot of the Ethereum network."""
 
 import six.moves.cPickle as pickle
-from graph_tool.all import *
+# from graph_tool.all import *
 import pymongo
 import os
 import subprocess
 import signal
 import copy
-from tags import tags
-import analysis_util
-env = analysis_util.set_env()
+from fether.Analysis import tags
+from fether.Analysis import set_env
+env = set_env()
 DIR = env["mongo"] + "/data"
 DATADIR = env["txn_data"]
 

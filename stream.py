@@ -1,12 +1,9 @@
 """Stream updates to the blockchain from geth to mongo."""
 import sys
 import os
-sys.path.append("Preprocessing/Crawler")
-from Crawler import Crawler
-sys.path.append("Analysis")
-from TxnGraph import TxnGraph
-from ParsedBlocks import ParsedBlocks
-sys.path.append("Scripts")
+from fether.Preprocessing import Crawler
+from fether.Analysis import TxnGraph
+from fether.Analysis import ParsedBlocks
 from extract import syncCSV
 import tqdm
 
